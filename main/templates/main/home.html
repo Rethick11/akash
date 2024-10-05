@@ -1,0 +1,45 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+Home - E-Gift Commerce
+{% endblock %}
+
+{% block content %}
+<!-- Main Hero Section -->
+<section class="container mx-auto flex flex-col lg:flex-row items-center mt-16 lg:mt-32 px-6 space-y-12 lg:space-y-0">
+    <!-- Left Content -->
+    <div class="text-center lg:text-left lg:w-1/2 fade-in space-y-6">
+        <h1 class="text-5xl font-extrabold leading-tight fade-in text-black">The Future of Digital Gifting</h1>
+        <p class="mt-4 text-lg leading-relaxed fade-in text-gray-700">Fast, secure, and convenient. Explore our platform for the best digital gift card experience.</p>
+        <a href="{% url 'login-register' 'Register' %}" class="mt-6 inline-block bg-black text-white hover:bg-gray-800 px-8 py-3 rounded-full text-lg transition duration-300 transform hover:scale-105 fade-in"
+            style="animation-delay: 1s;">Get Started</a>
+    </div>
+
+    <!-- Right Content  -->
+    <div class="lg:w-1/2 text-center lg:text-right">
+        <img src="https://www.kindpng.com/picc/m/282-2822613_slide-trade-gift-card-hd-png-download.png" alt="Gift Illustration" class="mx-auto lg:ml-auto transform hover:scale-105 transition duration-300" style="animation-delay: 1s;">
+    </div>
+</section>
+
+<!-- What We Do Section -->
+<section class="container mx-auto mt-24 px-6 py-16 border-t border-gray-300">
+    <div class="text-center lg:text-left lg:w-3/4 mx-auto space-y-6 fade-in">
+        <h2 class="text-4xl font-bold fade-in mb-8">What We Do</h2>
+        <p class="mt-4 text-lg fade-in text-gray-700 leading-relaxed">At E-Gift Commerce, we provide a seamless platform to send and receive digital gift cards instantly, helping you share love and joy across the globe. Whether it’s for birthdays, holidays, or just a small thank-you, our service ensures that your gift arrives safely and quickly.</p>
+    </div>
+</section>
+
+<!-- Join Us Section -->
+<section class="container mx-auto mt-24 px-6 py-16 border-t border-gray-300">
+    <div class="flex flex-col lg:flex-row items-center lg:justify-between lg:text-left space-y-12 lg:space-y-0">
+        <div class="lg:w-1/2 fade-in space-y-6">
+            <h2 class="text-4xl font-bold fade-in mb-8">Join Us Today!</h2>
+            <p class="mt-4 text-lg fade-in text-gray-700 leading-relaxed">Become part of the E-Gift Commerce community and start sending your digital gift cards with ease. Enjoy exclusive discounts and track all your transactions from our secure dashboard.</p>
+        </div>
+        <div class="lg:w-1/2 text-center lg:text-right mt-10 lg:mt-0">
+            <a href="{% url 'login-register' 'Register' %}" class="inline-block bg-black text-white hover:bg-gray-800 px-8 py-3 rounded-full text-lg transition duration-300 transform hover:scale-105 fade-in"
+                style="animation-delay: 1s;">Sign Up Now</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
