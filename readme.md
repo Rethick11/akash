@@ -56,11 +56,6 @@ This is the E-Gift Commerce Portal built using Django and Tailwind CSS.
     python manage.py migrate
     ```
 
-7. **Create a Superuser (Optional for Admin Access)**:
-    ```bash
-    python manage.py createsuperuser
-    ```
-
 ### For Windows
 
 1. **Clone the Repository**:
@@ -94,11 +89,6 @@ This is the E-Gift Commerce Portal built using Django and Tailwind CSS.
 6. **Run the Migrations**:
     ```bash
     python manage.py migrate
-    ```
-
-7. **Create a Superuser (Optional for Admin Access)**:
-    ```bash
-    python manage.py createsuperuser
     ```
 
 ---
