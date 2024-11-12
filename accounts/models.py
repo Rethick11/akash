@@ -21,4 +21,9 @@ class CustomUser(AbstractUser):
     * shippingaddress = Address (user class)
     * role = UserType (enum)
     '''
-    pass
+    class UserType(models.IntegerChoices):
+        ADMIN = 1
+        CUSTOMER = 2
+        RECIPIENT = 3
+
+    usertype = models.IntegerField(choices=UserType, default=2)
