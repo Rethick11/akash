@@ -54,12 +54,12 @@
             {% if is_login %}
             <p class="mt-10 text-center text-sm text-gray-500">
                 Not a member?
-                <a href="{% url 'login-register' 'Register' %}" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Register</a>
+                <a href="{% url 'register' %}" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Register</a>
             </p>
             {% else %}
             <p class="mt-10 text-center text-sm text-gray-500">
                 Already have an account?
-                <a href="{% url 'login-register' 'login' %}" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Sign in</a>
+                <a href="{% url 'login' %}" class="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">Login</a>
             </p>
             {% endif %}
         </div>
