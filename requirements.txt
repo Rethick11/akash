@@ -1,0 +1,9 @@
+Django>=5.1.1
+tailwindcss
+Pillow
+django-crispy-forms
+crispy-bootstrap5
+crispy-tailwind
+whitenoise
+gunicorn
+django-environ
