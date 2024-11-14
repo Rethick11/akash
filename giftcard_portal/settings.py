@@ -44,7 +44,8 @@ INSTALLED_APPS = [
 
     # Local additions:
     'accounts.apps.AccountsConfig',
-    'main'
+    'main',
+    'giftcards'
 ]
 
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'tailwind'
@@ -139,5 +140,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
-LOGIN_REDIRECT_URL = 'home'
+LOGIN_REDIRECT_URL = 'giftcard_list'
 LOGOUT_REDIRECT_URL = 'home'

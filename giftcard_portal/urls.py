@@ -38,5 +38,6 @@ urlpatterns = [
 
     # Local apps:
     path('accounts/', include('accounts.urls')),
-    path('', include('main.urls'))
+    path('', include('main.urls')),
+    path('giftcards/', include('giftcards.urls'))
 ]
