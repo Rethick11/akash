@@ -6,7 +6,7 @@ class GiftCard(models.Model):
     card_name = models.CharField(max_length=100)
     card_description = models.TextField()
     card_category = models.CharField(max_length=50)
-    card_type = models.CharField(max_length=20)    
+    card_type = models.CharField(max_length=20)
     amount = models.DecimalField(max_digits=10, decimal_places=2)
     balance = models.DecimalField(max_digits=10, decimal_places=2)
     card_status = models.CharField(max_length=20)
@@ -14,7 +14,14 @@ class GiftCard(models.Model):
     card_number = models.CharField(max_length=50, unique=True)
     card_quantity = models.IntegerField()
     image_url = models.URLField(max_length=500, blank=True, null=True)
-    
+
+    def __str__(self):
+        return (
+            self.card_name[:30]
+            if len(self.card_name) <= 30
+            else f'{self.card_name[:27]}...'
+        )
+
     def activate(self):
         self.card_status = "ACTIVE"
         self.save()
